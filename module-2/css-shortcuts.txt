@@ -1,0 +1,56 @@
+
+margin: 0px 0px 0px 0px;      [top right bottom left]
+margin: 0px 0px;              [ top&bottom left&right ]
+margin: 0px 0px 0px;          [ top left&right bottom  ]
+
+
+box-model: means a css element is a box of width 100% and height of 0%  by default. you can edit 
+the properties as below
+
+1. margin
+2. padding 
+3. border:
+            border-width: defaults to medium
+            border-style: defaults to None( so this have to be set)
+            border-color: defaults to text color
+
+            #  border shorthand
+            border: 2px solid pink     [ border-width border-style border-color] 
+
+            # applying a uniform border
+            border: 2px solid pink     applies to all at once
+
+            # applying a different border to the sides of an element
+            p {
+                border-top: 2px solid pink
+                border-right: 5px dotted red
+                border-bottom: 10px double green
+                border-left: 1px dashed purple
+            }
+
+
+hierachy of cascade( decending order)
+1. id
+2. class
+3. tags( p, h1, h3 , e.t.c)
+4. body
+
+
+center an element on a page
+declare a width
+declare margin-left and margin-right: auto
+
+
+creating columns for our elements we can use either
+1. flexbox (more easy to use) or
+2. grid (not easy to use)
+
+flexbox:
+# picking the class to apply flex on
+.container{
+    display : flex;
+}
+
+# background image: this is not a content, it is a decorator
+# syntax
+background-image: url('url_path/file_name');
